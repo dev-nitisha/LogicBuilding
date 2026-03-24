@@ -128,3 +128,22 @@ def rev(n):
     
 print(rev(2234))
 ```
+
+## 12. Check whether the given number is a palindrome. 
+```python
+def rev(n):
+    reverse = 0
+    while n>0:
+        num=n%10
+        reverse = reverse*10+num
+        n=n//10
+    return reverse
+    
+def palindrom(n):
+    if n== rev(n):
+        return"yes the given number is a palindrom"
+    else:
+        return"no the given number is not a palindrom"
+    
+print(palindrom(2332))
+```
